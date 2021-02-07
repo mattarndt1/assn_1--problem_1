@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('mapid').setView([-94, 34], 13);
 
 L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey={apikey}', {
 	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
