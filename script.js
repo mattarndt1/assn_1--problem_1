@@ -20,14 +20,3 @@ marker2.bindPopup("Chipotle - Creve Coeur");
 marker3.bindPopup("Chipotle - Clayton");
 marker4.bindPopup("Chipotle - Hanley Rd STL");
 marker5.bindPopup("Chipotle - Kirkwood");
-
-var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(mymap);
-}
-
-mymap.on('click', onMapClick);
