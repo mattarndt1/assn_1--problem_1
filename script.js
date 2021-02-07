@@ -8,26 +8,18 @@ var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/
 	ext: 'png'
 }).addTo(mymap);
 
-var marker = L.marker([51.5, -0.09]).addTo(mymap);
-var marker2 = L.marker([51.5105, -0.11]).addTo(mymap);
+var marker1 = L.marker([38.63660, -90.20268]).addTo(mymap);
+var marker2 = L.marker([38.65540, -90.32204]).addTo(mymap);
+var marker3 = L.marker([38.67721, -90.40416]).addTo(mymap);
+var marker4 = L.marker([38.46775, -90.39442]).addTo(mymap);
+var marker5 = L.marker([38.63226, -90.35887]).addTo(mymap);
 
-var circle = L.circle([51.508, -0.11], {
-    color: 'green',
-    fillColor: '#000',
-    fillOpacity: 0.5,
-    radius: 500
-}).addTo(mymap);
 
-var polygon = L.polygon([
-    [51.509, -0.08],
-    [51.503, -0.06],
-    [51.51, -0.047]
-]).addTo(mymap);
-
-marker.bindPopup("<b>Hello world!</b><br>I am a popup for a marker.").openPopup();
-marker2.bindPopup("<b>Hello world!</b><br>I am a popup for a different marker.");
-circle.bindPopup("I am a circle.");
-polygon.bindPopup("I am a polygon.");
+marker1.bindPopup("Chipotle #1");
+marker2.bindPopup("Chipotle #2");
+marker3.bindPopup("Chipotle #3");
+marker4.bindPopup("Chipotle #4");
+marker5.bindPopup("Chipotle #5");
 
 var popup = L.popup();
 
